@@ -1,6 +1,9 @@
 class DeviseCreateAssociates < ActiveRecord::Migration[5.1]
   def change
     create_table :associates do |t|
+      t.string :First_name
+      t.string :Last_name
+      t.integer :id
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
